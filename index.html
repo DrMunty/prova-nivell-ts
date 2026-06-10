@@ -6,18 +6,35 @@
     <title>Prova de nivell</title>
 </head>
 <body>
-    <h1> Proba de nivell Albert Muntal Perez</h1>
-    <p> A continuación vamos a ver si tienes suerte. Introduce un número del 1 al 10 y yo te diré si te ha tocado la loteria o tienes que volver a intentarlo. 
-        <br><br>¿Te atreves a probarlo?
-        <br> <br>¡Introduce un número, dale al botón y pruebalo!
-    </p>
-        <input type = number placeholder= "Ingresa un número" id="user_input">
-    <br><br>
-     <button id="lottery"> JUGAR </button>
-     <input type="button" value="VER HISTORIAL" onclick ="seeHistory()"></input>
-    <div id="response"></div>
-    <script src= "src/scripts/lottery.ts"> </script>
-    <script src= "prueba.ts"> </script>
 
+    <header>
+        <h1> Proba de nivell Albert Muntal Perez</h1>
+    </header>
+
+    <main>
+        <section id="description">
+            <p> A continuació veurem si tens sort. Introdueix un número de l'1 al 10 i jo et diré si t'ha tocat la loteria o has de tornar a intentar-ho.</p>
+            <p>T'atreveixes a provar-ho?</p>
+            <p>Introdueix un número, dona-li al botó i prova-ho!</p>
+        </section>
+
+        <form id="lottery_game">
+            <input type = number placeholder = "Ingressa un nombre" id="user_input">
+            <br><br>
+            <button id = "play_lottery" type = "button"> JUGAR </button>
+            <br><br>
+            <button id = "see_attempts" type = "button"> VEURE INTENTS </button>
+        </form>
+
+        <br><br>
+        
+        <section id="results">
+            <div id="response"> </div>
+        </section>
+
+    </main>
+
+    <script src= "index.ts"> </script>
+    
 </body>
 </html>
