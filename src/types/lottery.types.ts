@@ -10,4 +10,5 @@ export interface LotteryHistoryItem {
   result: string;
 }
 
+export const history: LotteryHistoryItem[] = [];
 
